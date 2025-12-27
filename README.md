@@ -74,29 +74,36 @@ public/
 ## Customization Guide
 
 ### Update App Store Link
+
 Edit the `handleGetApp()` function in:
+
 - `src/components/Navigation.tsx`
 - `src/app/page.tsx`
 
 Update the URL:
+
 ```typescript
-window.open('https://apps.apple.com/us/app/YOUR-APP/idXXXXXXXXXX', '_blank');
+window.open("https://apps.apple.com/us/app/YOUR-APP/idXXXXXXXXXX", "_blank");
 ```
 
 ### Add Real Images
+
 1. Place screenshot images in `public/images/`
 2. Update image paths in components:
    - Hero: `src/components/Hero.tsx`
    - Benefits: `src/components/Benefits.tsx`
 
 ### Update Content
+
 - **Headlines & Copy**: Edit component files in `src/components/`
 - **Pricing Tiers**: Update `src/components/Pricing.tsx`
 - **FAQ Items**: Update `src/components/FAQ.tsx`
 - **Company Logos**: Update `src/components/SocialProof.tsx`
 
 ### Customize Colors
+
 Edit in `src/styles/globals.css` and `src/styles/home.css`:
+
 ```css
 /* Main gradient */
 background: linear-gradient(135deg, #5a2c8a 0%, #7d3fa1 50%, #8a4fb8 100%);
@@ -106,15 +113,18 @@ background: linear-gradient(135deg, #ff6b6b 0%, #ff8e72 100%);
 ```
 
 ### Fonts
+
 The design uses:
+
 - **Headings**: Georgia, Garamond, serif
 - **Body**: System fonts (auto-optimized by Next.js)
 
 To use custom fonts, add to `src/app/layout.tsx`:
-```typescript
-import { Playfair_Display } from 'next/font/google';
 
-const playfair = Playfair_Display({ subsets: ['latin'] });
+```typescript
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({ subsets: ["latin"] });
 ```
 
 ## Performance Optimization
@@ -136,6 +146,7 @@ vercel
 ### Deploy to Other Platforms
 
 Works with any Node.js hosting:
+
 - Netlify
 - GitHub Pages
 - AWS Amplify
@@ -157,10 +168,10 @@ Add your preferred analytics:
 
 ```typescript
 // In src/app/layout.tsx
-import Script from 'next/script';
+import Script from "next/script";
 
 // Add Google Analytics, Mixpanel, etc.
-<Script src="https://..." strategy="afterInteractive" />
+<Script src="https://..." strategy="afterInteractive" />;
 ```
 
 ## License
@@ -170,6 +181,7 @@ Proprietary - Text Before You Send
 ## Support
 
 For questions about customization, visit the Next.js documentation:
+
 - [Next.js Docs](https://nextjs.org/docs)
 - [React Docs](https://react.dev)
 
