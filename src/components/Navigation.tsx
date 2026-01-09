@@ -3,6 +3,7 @@
 import React from 'react';
 import '../styles/home.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Navigation: React.FC = () => {
   const handleGetApp = () => {
@@ -12,13 +13,24 @@ const Navigation: React.FC = () => {
   return (
     <nav className="navbar">
       <div className="navbar-content">
-        <div className="navbar-logo">
-          <span><Image src="/images/logo.png" alt="Logo" width={40} height={40} /> </span>
-          <span>Text Before You Send</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <div className="navbar-logo">
+            <span>
+              <Image src="/images/logo.png" alt="Logo" width={40} height={40} />
+            </span>
+            <span>Text Before You Send</span>
+          </div>
         </div>
-        <button className="navbar-button" onClick={handleGetApp}>
-          Get the App
-        </button>
+
+        <div className="navbar-links">
+          <Link href="/features">Features</Link>
+          <Link href="/about">About</Link>
+          <Link href="/faq">FAQ</Link>
+          <Link href="/contact">Contact</Link>
+          <button className="btn btn-primary" onClick={handleGetApp}>
+            Get the App
+          </button>
+        </div>
       </div>
     </nav>
   );

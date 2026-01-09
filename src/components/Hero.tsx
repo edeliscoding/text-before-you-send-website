@@ -12,11 +12,11 @@ const Hero: React.FC<HeroProps> = ({ onGetApp }) => {
     <section className="container">
       <div className="hero">
         <div className="hero-content">
-          <h1>Understand How Your Message Will Be Received</h1>
+          <h1>Avoid Regrettable Messages - Say What You Mean</h1>
           <p>
             AI-powered analysis of your messages before you send them. Get instant insights on tone, 
-            sentiment, and how your words might be perceived. Perfect for important conversations, 
-            dating messages, and professional communication.
+            sentiment, and how your words might be perceived. <span className='text-orange'>Perfect for important conversations, 
+            dating messages, and professional communication.</span> 
           </p>
           <div className="hero-buttons">
             <button className="btn btn-primary" onClick={onGetApp}>
