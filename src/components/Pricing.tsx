@@ -37,7 +37,7 @@ const Pricing: React.FC<PricingProps> = ({ onGetApp }) => {
       id: 'premium',
       name: 'Premium',
       description: 'Unlock Dating Mode + unlimited analyses',
-      price: '$2.99',
+      price: 'Free for 7 days, then $2.99',
       period: 'per month',
       features: [
         '🔥 Dating Mode - Full message analysis for dating',
