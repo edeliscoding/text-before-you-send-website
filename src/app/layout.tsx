@@ -21,16 +21,11 @@ export const metadata: Metadata = {
   },
 };
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID || '';
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
   return (
     <html lang="en">
-      <body>
+      <head>
         {GA_ID && (
           <>
             <Script
@@ -38,27 +33,15 @@ export default function RootLayout({
               strategy="afterInteractive"
             />
             <Script id="gtag-init" strategy="afterInteractive">
-              {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${GA_ID}', { page_path: window.location.pathname });`}
+              {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}');`}
             </Script>
           </>
         )}
-
-        <Script id="site-structured-data" strategy="afterInteractive">
-          {`{
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "url": "https://textbeforeyousend.com",
-            "name": "Text Before You Send",
-            "description": "Take a breath, review your message, and send with confidence.",
-            "publisher": {
-              "@type": "Organization",
-              "name": "Text Before You Send"
-            }
-          }`}
-        </Script>
-
-        {children}
-      </body>
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
