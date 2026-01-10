@@ -4,8 +4,8 @@ import React from "react";
 
 const SocialProof: React.FC = () => {
   const stats = [
-    { label: "Messages Analyzed", value: "2K+" },
-    { label: "Happy Users", value: "1K+" },
+    { label: "Messages Analyzed", value: "4K+" },
+    { label: "Happy Users", value: "2K+" },
     // { label: 'Downloads', value: '1K+' }
   ];
 
