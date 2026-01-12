@@ -12,11 +12,9 @@ const Hero: React.FC<HeroProps> = ({ onGetApp }) => {
     <section className="container">
       <div className="hero">
         <div className="hero-content">
-          <h1>Avoid Regrettable Messages - Say What You Mean</h1>
+          <h1>Say it better, before you send it</h1>
           <p>
-            AI-powered analysis of your messages before you send them. Get instant insights on tone, 
-            sentiment, and how your words might be perceived. <span className='text-orange'>Perfect for important conversations, 
-            dating messages, and professional communication.</span> 
+           TextBeforeYouSend is your <span className='text-orange'>text coach</span> that helps you write clear, confident messages for important conversations and dating—so you sound like yourself, on your best day.
           </p>
           <div className="hero-buttons">
             <button className="btn btn-primary" onClick={onGetApp}>

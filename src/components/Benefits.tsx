@@ -29,6 +29,7 @@ const Benefits: React.FC = () => {
       description:
         'Exclusive to premium members. Get specialized analysis for dating messages. Analyze both incoming messages and your replies to understand interest levels, red flags, and optimal timing for responses.',
       features: [
+        'Upload screenshots of conversations',
         'Interest level analysis',
         'Red flag detection',
         'Reply timing suggestions',
