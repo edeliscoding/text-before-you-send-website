@@ -4,6 +4,9 @@ import { Contact } from '@/app/websites';
 export const metadata = {
   title: 'Contact — Text Before You Send',
   description: 'Contact Text Before You Send for support, partnerships, or feedback.',
+  alternates: {
+    canonical: '/contact',
+  },
 };
 
 export default function ContactPage() {

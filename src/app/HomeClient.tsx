@@ -11,7 +11,7 @@ import Footer from '@/components/Footer';
 import '@/styles/globals.css';
 import '@/styles/home.css';
 
-export default function Home() {
+export default function HomeClient() {
   const handleGetApp = () => {
     window.open('https://apps.apple.com/us/app/text-before-you-send/id6756531156', '_blank');
   };

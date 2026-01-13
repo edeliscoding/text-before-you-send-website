@@ -3,13 +3,22 @@ import '@/styles/globals.css';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://textbeforeyousend.com'),
   title: 'Text Before You Send - Think Before You Text',
   description: 'Take a breath, review your message, and send with confidence. The app that helps you avoid regrettable messages.',
   keywords: 'messaging, AI, tone detection, text review, communication',
   authors: [{ name: 'Text Before You Send' }],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   openGraph: {
     type: 'website',
-    url: 'https://textbeforeyousend.com',
+    url: '/',
     title: 'Text Before You Send - Think Before You Text',
     description: 'Take a breath, review your message, and send with confidence.',
     siteName: 'Text Before You Send',

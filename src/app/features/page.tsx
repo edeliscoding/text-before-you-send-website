@@ -4,6 +4,9 @@ import { Features } from '@/app/websites';
 export const metadata = {
   title: 'Features — Text Before You Send',
   description: 'Features overview for Text Before You Send.',
+  alternates: {
+    canonical: '/features',
+  },
 };
 
 export default function FeaturesPage() {

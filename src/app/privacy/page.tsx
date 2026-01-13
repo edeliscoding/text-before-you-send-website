@@ -4,6 +4,9 @@ import { Privacy } from '@/app/websites';
 export const metadata = {
   title: 'Privacy Policy — Text Before You Send',
   description: 'Privacy policy for Text Before You Send. How we handle data and cookies.',
+  alternates: {
+    canonical: '/privacy',
+  },
 };
 
 export default function PrivacyPage() {

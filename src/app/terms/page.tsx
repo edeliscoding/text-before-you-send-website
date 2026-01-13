@@ -4,6 +4,9 @@ import { Terms } from '@/app/websites';
 export const metadata = {
   title: 'Terms — Text Before You Send',
   description: 'Terms of service for using Text Before You Send.',
+  alternates: {
+    canonical: '/terms',
+  },
 };
 
 export default function TermsPage() {
